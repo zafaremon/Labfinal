@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" class="logo" Salt=""></a>
+        <nav>
+            
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <form id="loginForm" action="validate_login.php" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </main>
+  <footer>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <p><strong>Address</strong><br> BRTA Building, Chairman <br> Bari New Airport Road <br> Banani, Dhaka-1212, Bangladesh.</p>
+        <p><strong>Email</strong> info@brta.gov.bd</p>
+        <p><strong>Hours</strong> 08:00 AM - 05:00 PM, Sun - Thu</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="links">
+        <h3>Important Links</h3>
+        <ul>
+            <li><a href="#">BRTA Service Portal</a></li>
+        <li><a href="#">Driver's License Application</a></li>
+        <li><a href="#">Vehicle Registration</a></li>
+        <li><a href="#">Road Safety Rules</a></li>
+    </ul>
+</div>
+
+<div class="subscribe">
+    <h3>Subscribe to Our Newsletter</h3>
+    <form id="subscriptionForm" action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <button type="submit">Subscribe</button>
+
+        <div id="errorMessage"></div>
+    </form>
+</div>
+</footer>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

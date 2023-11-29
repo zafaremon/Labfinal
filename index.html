@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRTA Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" class="logo" Salt=""></a>
+        <nav>
+            
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="images/slide1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/slide2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/slide3.jpg" style="width:100%">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+    </section>
+
+    <section class="instructions">
+            <h2>Driver's License Instructions</h2>
+            <ul>
+                <li>Visit the <a href="https://bsp.brta.gov.bd/">BRTA Service Portal</a> to create an account.</li>
+                <li>Complete the online application form and upload the necessary documents.</li>
+                <li>Schedule your driving test and pass the theoretical and practical exams.</li>
+                <li>Pay the applicable fee and collect your driver's license.</li>
+            </ul>
+    </section>
+
+    <section class="table">
+            <div class="fees">
+                <h2>Vehicle Registration Fees</h2>
+                <table>
+                    <tr>
+                        <th>Vehicle Type</th>
+                        <th>Registration Fee</th>
+                    </tr>
+                    <tr>
+                        <td>Car</td>
+                        <td>৳5,000</td>
+                    </tr>
+                    <tr>
+                        <td>Motorcycle</td>
+                        <td>৳2,000</td>
+                    </tr>
+                    <tr>
+                        <td>Truck</td>
+                        <td>৳10,000</td>
+                    </tr>
+                    <tr>
+                        <td>Bus</td>
+                        <td>৳15,000</td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+
+    <footer>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address</strong><br> BRTA Building, Chairman <br> Bari New Airport Road <br> Banani, Dhaka-1212, Bangladesh.</p>
+                <p><strong>Email</strong> info@brta.gov.bd</p>
+                <p><strong>Hours</strong> 08:00 AM - 05:00 PM, Sun - Thu</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="links">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="#">BRTA Service Portal</a></li>
+                <li><a href="#">Driver's License Application</a></li>
+                <li><a href="#">Vehicle Registration</a></li>
+                <li><a href="#">Road Safety Rules</a></li>
+            </ul>
+        </div>
+
+        <div class="subscribe">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form id="subscriptionForm" action="store_subscription.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <button type="submit">Subscribe</button>
+
+                <div id="errorMessage"></div>
+            </form>
+        </div>
+    </footer>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+span{
+  text-decoration: none;
+  font-weight: 200;
+}
+
+a{
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+h1{
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+
+ #navbar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+ }
+
+ #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+ }
+
+ #navbar li a{
+    text-decoration: none ;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+ }
+
+ #navbar li a:hover,
+ #navbar li a.active{
+    color: #088178;
+    background-color: #E3E6F3 ;
+ }
+ 
+ #navbar li a.active::after,
+ #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+ }
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.instructions {
+    padding: 20px;
+    background-color: #eff2f5;
+}
+
+instructions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+instructions ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+instructions li {
+    margin-bottom: 10px;
+}
+
+instructions a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.table {
+    background-color: #eff2f5;
+}
+.fees {
+    padding: 20px;
+    width: 50%;
+}
+
+.fees h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fees table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fees th, .fees td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.fees th {
+    background-color: #eee;
+}
+.fees td {
+    text-align: center;
+}
+
+footer {
+    background-color: #E3E6F3;
+    padding: 20px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+ 
+.contact, .links, .subscribe {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.contact h3, .links h3, .subscribe h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact ul, .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact li, .links li {
+    margin-bottom: 5px;
+}
+
+.contact li i, .links li i {
+    margin-right: 10px;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe label {
+    margin-bottom: 5px;
+}
+
+.subscribe input {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.subscribe button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* css for form */
+
+/* CSS for form layout */
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  
+  input[type="file"] {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+  
+  /* Optional: Additional styling for better visual appearance */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#view a{
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.detailes{
+  padding: 5px;
+  margin: 50px;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    tbody, thead {
+        display: block;
+    }
+    tbody {
+        max-height: 300px; /* Adjust as needed */
+        overflow-y: auto;
+    }
+    th, td {
+        width: auto;
+    }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+    }
+    
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    form {
+      padding: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 12px;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    .contact, .links, .subscribe {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

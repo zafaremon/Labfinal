@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRTA Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" class="logo" Salt=""></a>
+        <nav>
+            
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="form.html">Form</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form">
+      <h1>License Application Form</h1>
+      <form id="licenseForm" enctype="multipart/form-data" action="process_form.php" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="nid">NID:</label>
+              <input type="text" id="nid" name="nid" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="vehicleNo">Vehicle No:</label>
+              <input type="text" id="vehicleNo" name="vehicleNo" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="chassisNo">Chassis No:</label>
+              <input type="text" id="chassisNo" name="chassisNo" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="photo">Passport Size Photo:</label>
+              <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="nidCopy">NID Soft Copy:</label>
+              <input type="file" id="nidCopy" name="nidCopy" accept=".pdf, .doc, .docx" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="presentAddress">Present Address:</label>
+              <textarea id="presentAddress" name="presentAddress" required></textarea>
+            </div>
+      
+            <div class="form-group">
+              <label for="permanentAddress">Permanent Address:</label>
+              <textarea id="permanentAddress" name="permanentAddress" required></textarea>
+            </div>
+      
+            <button type="submit">Submit</button>
+          </form>
+
+    </section>
+
+    
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><strong>Address</strong><br> BRTA Building, Chairman <br> Bari New Airport Road <br> Banani, Dhaka-1212, Bangladesh.</p>
+            <p><strong>Email</strong> info@brta.gov.bd</p>
+            <p><strong>Hours</strong> 08:00 AM - 05:00 PM, Sun - Thu</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="links">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="#">BRTA Service Portal</a></li>
+            <li><a href="#">Driver's License Application</a></li>
+            <li><a href="#">Vehicle Registration</a></li>
+            <li><a href="#">Road Safety Rules</a></li>
+        </ul>
+    </div>
+
+    <div class="subscribe">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form id="subscriptionForm" action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <button type="submit">Subscribe</button>
+
+            <div id="errorMessage"></div>
+        </form>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>
